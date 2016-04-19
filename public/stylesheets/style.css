@@ -77,3 +77,29 @@ a{
 .main-tabs a{
   padding: 10px !important;
   color : #F44336 !important;
+}
+
+.song-title {
+    width: 13em !important;
+    word-wrap: break-word !important;
+    font-size: small !important;
+}
+.production-name a{
+  color : grey !important;
+  font-size: small !important;
+}
+.production-name a:hover{
+  color : #00B7FF !important;
+}
+.card-bottom{
+  font-size: small !important;
+  display: -webkit-box !important;
+}
+.card-bottom>li:before{
+  content: '\002022';
+  margin: 0 5px;
+}
+
+.song-content{
+  padding: 5px !important;
+}
