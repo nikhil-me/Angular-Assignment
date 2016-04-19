@@ -1,6 +1,9 @@
-angular.module('youtubeApp',['ngRoute'])
-	.controller("MainCtrl",["$http","$scope",function($http,$scope){
+angular.module('youtubeApp',['ngRoute','ngProgress'])
+	.controller("MainCtrl",["$http","$scope","ngProgressFactory",function($http,$scope,ngProgressFactory){
 		// console.log("hi");	
+		$scope.progressbar = ngProgressFactory.createInstance();
+        $scope.progressbar.start();
+        $scope.progressbar.complete();
 		$scope.items1 = [1,2,3,4,5,6,7,8,9];
 	}])
 	.directive('navBar', function() {
