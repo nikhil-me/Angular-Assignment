@@ -49,7 +49,7 @@ a{
   color : #ffffff;
 }
 
-
+/*nav-bar*/
 .topbar{
   margin-top:-60px !important;
   margin-left: -50px !important;
@@ -61,3 +61,19 @@ a{
 .search-box:focus{
   background-color: #757575 !important;
 }
+
+
+
+/*middle-container*/
+
+.side-offset {
+  margin-left: 300px !important;
+}
+
+.main-tabs {
+  display: inline-block !important;
+  text-align: center !important;
+}
+.main-tabs a{
+  padding: 10px !important;
+  color : #F44336 !important;
