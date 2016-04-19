@@ -6,26 +6,54 @@
 			<a ng-href="">Subscriptions</a>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col">
-			<div class="card">
-				<div class="card-image waves-effect waves-block waves-light">
-					<a ng-href="/#/video">
-						<img class="activator" src="/images/1.jpg">
-					</a>
-				</div>
-				<div class="card-content song-content">
-					<p class="song-title"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-					<p class="production-name"><a href="#">J STAR Productions</a></p>
-					<ul class="card-bottom">
-						<li>19000 views</li>
-						<li>1 month ago</li>
-					</ul>
-				</div>
+		<!-- <span>dla</span> -->
+		<div class="row">
+			<div >
+				<span>Watch It Again</span>
 			</div>
+			<owl-carousel class="owl-carousel" options="{navigation: true, pagination: false, rewindNav : false}">
+				<div owl-carousel-item="" class="col" ng-repeat="item in items1">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<a ng-href="/#/video">
+								<img class="activator" src="/images/1.jpg">
+							</a>
+						</div>
+						<div class="card-content song-content">
+							<p class="song-title"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
+							<p class="production-name"><a href="#">J STAR Productions</a></p>
+							<ul class="card-bottom">
+								<li>19000 views</li>
+								<li>1 month ago</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</owl-carousel>
 		</div>
-	</div>
-	
-
+		<div class="row">
+			<div >
+				<span>Recommended</span>
+			</div>
+			<owl-carousel class="owl-carousel" options="{navigation: true, pagination: false, rewindNav : false}">
+				<div owl-carousel-item="" class="col" ng-repeat="item in items1">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<a ng-href="/#/video">
+								<img class="activator" src="/images/1.jpg">
+							</a>
+						</div>
+						<div class="card-content song-content">
+							<p class="song-title"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
+							<p class="production-name"><a href="#">J STAR Productions</a></p>
+							<ul class="card-bottom">
+								<li>19000 views</li>
+								<li>1 month ago</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</owl-carousel>
+		</div>
 </div>			
 

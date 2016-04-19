@@ -5,7 +5,7 @@ angular.module('youtubeApp')
 
 	.when('/', {
 
-		templateUrl: '/views/main.html'
+		templateUrl: '/views/main.html',
 	})
 	.when('/video',{
 		templateUrl: '/views/video.html'
