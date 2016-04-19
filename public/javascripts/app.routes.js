@@ -7,7 +7,9 @@ angular.module('youtubeApp')
 
 		templateUrl: '/views/main.html'
 	})
-
+	.when('/video',{
+		templateUrl: '/views/video.html'
+	})
 	.otherwise('/');
 
 });

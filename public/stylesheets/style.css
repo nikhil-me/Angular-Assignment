@@ -103,3 +103,34 @@ a{
 .song-content{
   padding: 5px !important;
 }
+
+.left-songs {
+  display:-webkit-inline-box !important; 
+  vertical-align: top !important;
+  /*width: 50% !important;*/
+}
+.video-container{
+  width :100% !important;
+}
+.video-thumbinal{
+  height:100px !important;
+}
+.song-title-L{
+  margin-top: -10px !important;
+  width: 13em !important;
+  word-wrap: break-word !important;
+  font-size: small !important;
+}
+.production-name-L{
+  margin-top: -15px !important;
+}
+.card-bottom-L{
+  font-size: small !important;
+  display: -webkit-box !important;
+  margin-top: -8px;
+  margin-left: -6px;
+}
+.card-bottom-L>li:before{
+  content: '\002022';
+  margin: 0 5px;
+}
