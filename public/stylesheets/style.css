@@ -1,8 +1,63 @@
+#main-wrapper , html{
+  height: 100%;
+  width: 100%;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+	background-color: #D0002D !important;
+}
+
+/* side-bar*/
+
+.sidecontainer{
+  margin-top: 50px;
+}
+
+.row-size{
+  width : 100%;
+  height : 100%;
+}
+
+.list{
+  margin-top: 20px;
+
+}
+
+a{
+  color: #00B7FF;
+}
+
+.icon-size {
+  font-size :25px;
+}
+
+.item-size {
+  font-size: 13px;
+  padding:18px;
+  float:left;
+  color : #ffffff;
+}
+
+
+.topbar{
+  margin-top:-60px !important;
+  margin-left: -50px !important;
+}
+.brand-logo{
+  width : 300px !important;
+}
+
+.search-box:focus{
+  background-color: #757575 !important;
 }

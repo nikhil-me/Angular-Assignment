@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="youtubeApp">
+<head>
+  <title>Youtube App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+  <link rel="stylesheet" href="/stylesheets/materialize.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+
+  <div id="main-wrapper" ng-controller="MainCtrl">
+  	<nav-bar></nav-bar>
+  	<side-bar></side-bar>
+    <div ng-view></div>
+  </div>
+
+  <div class="hiddendiv">
+    <!-- Angular Material Dependencies-->
+    <script src="/javascripts/global/angular.min.js"></script>
+    <script src="/javascripts/global/angular-route.min.js"></script>
+    <script src="/javascripts/global/jquery.js"></script>
+    <script src="/javascripts/global/materialize.min.js"></script>
+    <script src="/javascripts/MainController.js"></script>
+    <script src="/javascripts/app.routes.js"></script>
+  </div>
+</body>
+</html>
