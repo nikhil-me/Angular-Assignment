@@ -105,8 +105,8 @@ a{
 }
 
 .left-songs {
-  display:-webkit-inline-box !important; 
-  vertical-align: top !important;
+  /*display:-webkit-inline-box !important; 
+  vertical-align: top !important;*/
   /*width: 50% !important;*/
 }
 .video-container{
@@ -116,7 +116,7 @@ a{
   height:100px !important;
 }
 .song-title-L{
-  margin-top: -10px !important;
+  margin-top: 0px !important;
   width: 13em !important;
   word-wrap: break-word !important;
   font-size: small !important;
@@ -133,4 +133,9 @@ a{
 .card-bottom-L>li:before{
   content: '\002022';
   margin: 0 5px;
+}
+
+
+.side-nav{
+  height :800px !important;
 }

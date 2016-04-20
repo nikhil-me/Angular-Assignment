@@ -1,30 +1,41 @@
-<div class="container video-container">
+<div class="">
 	<div class="row">
 		<div class="col l6 offset-l2">
 			<div class="video-container">
 	        	<iframe src="https://www.youtube.com/embed/Nj9bLwOnRCI" frameborder="0" allowfullscreen></iframe>
 	      	</div>
 		</div>
-		<div class="col l4">
-			<ul class="left-songs">
-				<li>
-					<a ng-href="/#/video">
-						<img class="video-thumbinal" src="/images/1.jpg">
-					</a>
-				</li>
-				<li>
-					<div class="song-content">
-						<p class="song-title-L"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-						<p class="production-name-L"><a href="#">J STAR Productions</a></p>
-						<ul class="card-bottom-L">
-							<li>19000 views</li>
-							<li>1 month ago</li>
-						</ul>
-					</div>
-					
-				</li>
-				
-			</ul>
+		<div class="col l4 list" >
+			<div class="row" >
+				<div class="col l12" ng-repeat="item in items1">
+					<!-- <ul class="collection right">
+						<li class="collection-item"> -->
+						
+							<div class="col l6">
+								<a ng-href="/#/video">
+									<img class="video-thumbinal" src="/images/1.jpg">
+								</a>
+							</div>
+							<div class="col l6">
+								<div class="">
+									<p class="song-title-L"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
+									<p class="production-name-L"><a href="#">J STAR Productions</a></p>
+									<ul class="card-bottom-L">
+										<li>19000 views</li>
+										<li>1 month ago</li>
+									</ul>
+								</div>
+								
+							</div>
+						
+						<!-- </li>
+						<li class="collection-item">
+							
+						</li>
+						
+					</ul> -->
+				</div>
+			</div>
 				
 		</div>
 	</div>

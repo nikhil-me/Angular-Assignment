@@ -3,13 +3,16 @@ angular.module('youtubeApp')
 
 	$routeProvider
 
-	.when('/', {
+	.when('/main', {
 
 		templateUrl: '/views/main.html',
+		controller: "MediumController"
+		
 	})
 	.when('/video',{
-		templateUrl: '/views/video.html'
+		templateUrl: '/views/video.html',
+		controller : "videoController"
 	})
-	.otherwise('/');
-
+	.otherwise('/main');
+	console.log("routes");
 });
