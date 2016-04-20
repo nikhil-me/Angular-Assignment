@@ -139,3 +139,121 @@ a{
 .side-nav{
   height :800px !important;
 }
+
+
+/*Comment Box*/
+
+button {
+  background-color: #D0002D !important;
+}
+
+.container-border {
+    border: 2px solid #BBBBBB;
+    border-radius: 18px;
+    padding-top: 20px;
+    margin-right: 5%;
+    width :100%;
+    background-color: #FAFAFA;
+  box-shadow: 0 0 20px #6D6969;
+}
+
+.inner-container{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.textarea-border{
+  border: 2px solid #BBBBBB   !important;
+    border-radius: 18px     !important;
+    /*margin-bottom: 22px     !important;*/
+}
+
+
+.comment-label,.name-label{
+  left : 1.75rem !important;
+  color : #BBBBBB !important;
+}
+
+.comment-label.active,.name-label.active{
+  transform : translateY(-200%) !important;
+  color : #D0002D !important;
+}
+
+.comment-label.active ~ .comment-input{
+  transform : translateY(-200%) !important;
+  color : #D0002D !important;
+}
+
+.name-label.active ~ .name-input{
+  color : #D0002D !important;
+}
+
+.name-input input:focus {
+    border-bottom: 1px solid #D0002D !important;
+    box-shadow: 0 1px 0 0 #D0002D !important;
+ }
+
+.comment-input textarea:focus {
+    border-bottom: 1px solid #BBBBBB !important;
+    box-shadow: 0 1px 0 0 #BBBBBB !important;
+ }
+
+.comment-counter{
+  display : none;
+}
+
+.comment-label.active + .comment-counter{
+  display : block;
+}
+
+
+.comment-entry{
+  border-bottom: 2px solid #DDDDDD ;
+  box-shadow: 0 0 20px #6D6969;
+  border-radius :5px;
+}
+
+.thumbup{
+  color : #44A944;
+  font-size: 15px;
+  background-color: #FAFAFA;
+}
+
+a.thumup:hover{
+  color : green;
+  font-size: 18px;
+  background-color: #FAFAFA;
+}
+
+.thumbdown{
+  color : #D0002D;
+  font-size: 15px;
+  background-color: #FAFAFA;
+}
+
+.updown{
+  position: relative;
+  top :10px;
+}
+
+h5 {
+  font-weight: 500;
+  color : #736E6E;
+}
+
+span {
+  color : #808080 !important;
+}
+.position{
+  position: relative;
+  left :28px;
+  font-size: 14px;
+  word-wrap: break-word;
+  padding-right: 20%;
+  color : #888383;
+}
+
+#comment-box{
+  /*box-shadow: 0 0 5px #6D6969;*/
+}

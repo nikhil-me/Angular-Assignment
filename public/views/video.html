@@ -1,42 +1,64 @@
-<div class="">
-	<div class="row">
-		<div class="col l6 offset-l2">
-			<div class="video-container">
-	        	<iframe src="https://www.youtube.com/embed/Nj9bLwOnRCI" frameborder="0" allowfullscreen></iframe>
-	      	</div>
+<div class="row">
+	<div class="col l6 offset-l2">
+		<div class="video-container">
+        	<iframe src="https://www.youtube.com/embed/Nj9bLwOnRCI" frameborder="0" allowfullscreen></iframe>
+      	</div>
+      	<div class="container container-border">
+			<div class="container inner-container">
+				<form ng-submit="postComment()">
+					<div class="row ">
+			      <div class="input-field col s12 l12 comment-input">
+			        <textarea id="comment-box" ng-trim="false" ng-model="comment" class="materialize-textarea textarea-border" maxlength="200" required></textarea>
+			        <label for="comment-box" class="comment-label">Type a comment here...</label>
+			        <span class="comment-counter right">{{comment.length||0}}/200</span>
+			      </div>
+			      <div class="input-field col s6 l6 name-input">
+			        <input id="name" type="text" ng-model="name" required>
+			        <label class="name-label" for="name">Name</label>
+			      </div>
+			      <div class="input-field col s6 l6">
+							<button class="waves-effect waves-light btn right" type="submit"><i class="material-icons right">send</i>Post</button>
+						</div>
+					</div>
+					<div class="row">
+					</div>
+				</form>
+
+				<div class="row comment-entry" ng-repeat="comment in comments track by $index">
+					<div class="col l10 s8 ">
+						<h5>{{$index+1}}. {{comment.username}}</h5>
+						<p class="position flow-text materialize-textarea">{{comment.body}}</p>
+					</div>
+					<div class="col l2 s4 updown">
+					<a class="waves-effect waves-light" ng-click="upvote($index)"><i class="material-icons thumbup">thumb_up</i></a> <span>{{comment.upvote}} upvotes</span>
+						<br>
+						<a class="waves-effect waves-light" ng-click="downvote($index)"><i class="material-icons thumbdown">thumb_down</i></a> <span>{{comment.downvote}} downvotes</span>
+					</div>
+				</div>
+
+			</div>
 		</div>
-		<div class="col l4 list" >
-			<div class="row" >
-				<div class="col l12" ng-repeat="item in items1">
-					<!-- <ul class="collection right">
-						<li class="collection-item"> -->
-						
-							<div class="col l6">
-								<a ng-href="/#/video">
-									<img class="video-thumbinal" src="/images/1.jpg">
-								</a>
-							</div>
-							<div class="col l6">
-								<div class="">
-									<p class="song-title-L"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-									<p class="production-name-L"><a href="#">J STAR Productions</a></p>
-									<ul class="card-bottom-L">
-										<li>19000 views</li>
-										<li>1 month ago</li>
-									</ul>
-								</div>
-								
-							</div>
-						
-						<!-- </li>
-						<li class="collection-item">
-							
-						</li>
-						
-					</ul> -->
+	</div>
+	<div class="col l4 list" >
+		<div class="row" >
+			<div class="col l12" ng-repeat="item in items1">
+				<div class="col l6">
+					<a ng-href="/#/video">
+						<img class="video-thumbinal" src="/images/1.jpg">
+					</a>
+				</div>
+				<div class="col l6">
+					<div class="">
+						<p class="song-title-L"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
+						<p class="production-name-L"><a href="#">J STAR Productions</a></p>
+						<ul class="card-bottom-L">
+							<li>19000 views</li>
+							<li>1 month ago</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-				
 		</div>
+			
 	</div>
 </div>

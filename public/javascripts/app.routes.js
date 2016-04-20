@@ -1,18 +1,17 @@
 angular.module('youtubeApp')
-.config(function ($routeProvider) {
-
-	$routeProvider
-
-	.when('/main', {
-
-		templateUrl: '/views/main.html',
-		controller: "MediumController"
-		
-	})
-	.when('/video',{
-		templateUrl: '/views/video.html',
-		controller : "videoController"
-	})
-	.otherwise('/main');
-	console.log("routes");
-});
+.config(['$stateProvider', '$urlRouterProvider', 
+    function($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise('/main');
+      $stateProvider
+        .state('main', {
+          url: '/main',
+          templateUrl: '/views/main.html',
+          controller : "MediumController"
+        })
+        .state('video', {
+          url: '/video',
+          templateUrl: '/views/video.html',
+          controller : "videoController"
+        });
+     }
+   ]);

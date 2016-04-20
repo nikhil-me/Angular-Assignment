@@ -1,4 +1,4 @@
-angular.module('youtubeApp',['ngRoute','ngProgress'])
+angular.module('youtubeApp',['ngProgress','ui.router'])
 	.controller("MainCtrl",["$http","$scope","ngProgressFactory",function($http,$scope,ngProgressFactory){
 		 console.log("hi");	
 		$scope.progressbar = ngProgressFactory.createInstance();
