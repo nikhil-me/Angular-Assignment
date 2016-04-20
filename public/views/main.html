@@ -6,25 +6,28 @@
 			<a ng-href="">Subscriptions</a>
 		</div>
 	</div>
+	<div class="row">
+		<img class="activator main-adv" src="/images/adv.jpg">
+	</div>
 		<!-- <span>dla</span> -->
 	<div class="row">
 		<div >
 			<span>Watch It Again</span>
 		</div>
 		<owl-carousel class="owl-carousel" options="{navigation: true, pagination: false, rewindNav : false}">
-			<div owl-carousel-item="" class="col" ng-repeat="item in items1">
+			<div owl-carousel-item="" class="col" ng-repeat="item in youtube.watch track by $index">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<a ng-href="/#/video">
-							<img class="activator" src="/images/1.jpg">
+						<a ui-sref="video({link:item.link})">
+							<img class="activator" src="/images/{{$index+1}}.jpg">
 						</a>
 					</div>
 					<div class="card-content song-content">
-						<p class="song-title"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-						<p class="production-name"><a href="#">J STAR Productions</a></p>
+						<p class="song-title"><a ui-sref="video({link:item.link})" >{{item.title}}</a></p>
+						<p class="production-name"><a href="#">{{item.channelname}}</a></p>
 						<ul class="card-bottom">
-							<li>19000 views</li>
-							<li>1 month ago</li>
+							<li>{{item.views}}</li>
+							<li>{{item.upload_date}}</li>
 						</ul>
 					</div>
 				</div>
@@ -36,19 +39,19 @@
 			<span>Recommended</span>
 		</div>
 		<owl-carousel class="owl-carousel" options="{navigation: true, pagination: false, rewindNav : false}">
-			<div owl-carousel-item="" class="col" ng-repeat="item in items1">
+			<div owl-carousel-item="" class="col" ng-repeat="item in youtube.recommend track by $index">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<a ng-href="/#/video">
-							<img class="activator" src="/images/1.jpg">
+						<a ui-sref="video({link:item.link})">
+							<img class="activator" src="/images/recommend/{{$index+1}}.jpg">
 						</a>
 					</div>
 					<div class="card-content song-content">
-						<p class="song-title"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-						<p class="production-name"><a href="#">J STAR Productions</a></p>
+						<p class="song-title"><a ui-sref="video({link:item.link})" >{{item.title}}</a></p>
+						<p class="production-name"><a href="#">{{item.channelname}}</a></p>
 						<ul class="card-bottom">
-							<li>19000 views</li>
-							<li>1 month ago</li>
+							<li>{{item.views}}</li>
+							<li>{{item.upload_date}}</li>
 						</ul>
 					</div>
 				</div>

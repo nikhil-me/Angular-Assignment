@@ -1,7 +1,8 @@
 <div class="row">
 	<div class="col l6 offset-l2">
 		<div class="video-container">
-        	<iframe src="https://www.youtube.com/embed/Nj9bLwOnRCI" frameborder="0" allowfullscreen></iframe>
+        	<iframe ng-src="{{link}}" frameborder="0" allowfullscreen></iframe>
+		
       	</div>
       	<div class="container container-border">
 			<div class="container inner-container">
@@ -41,19 +42,19 @@
 	</div>
 	<div class="col l4 list" >
 		<div class="row" >
-			<div class="col l12" ng-repeat="item in items1">
+			<div class="col l12" ng-repeat="item in youtube track by $index">
 				<div class="col l6">
-					<a ng-href="/#/video">
-						<img class="video-thumbinal" src="/images/1.jpg">
+					<a ui-sref="video({link:item.link})">
+						<img class="video-thumbinal" src="/images/{{$index+1}}.jpg">
 					</a>
 				</div>
 				<div class="col l6">
 					<div class="">
-						<p class="song-title-L"><a ng-href="#" >Na Na Na Na | J Star | Full Official Video | Latest Punjabi Song 2015</a></p>
-						<p class="production-name-L"><a href="#">J STAR Productions</a></p>
+						<p class="song-title-L"><a ui-sref="video({link:item[$index].link})">{{item.title}}</a></p>
+						<p class="production-name-L"><a href="#">{{item.channelname}}</a></p>
 						<ul class="card-bottom-L">
-							<li>19000 views</li>
-							<li>1 month ago</li>
+							<li>{{item.views}}</li>
+							<li>{{item.upload_date}}</li>
 						</ul>
 					</div>
 				</div>
