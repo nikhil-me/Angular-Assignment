@@ -1,4 +1,4 @@
-# Two Page Youtube App
+# Two Page Youtube App(Signzy Assignment)
 
 It is simple two page youtube application built using MEAN stack.
 
