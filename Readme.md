@@ -2,6 +2,9 @@
 
 It is simple two page youtube application built using MEAN stack.
 
+![Screenshot](1.png)
+![Screenshot](2.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -35,9 +38,9 @@ in the browser.
 
 ### Functionalities
 
-User can watch any video.
-User can post comment on the video.
-User can upvote or downvote comment.
+* User can watch any video.
+* User can post comment on the video.
+* User can upvote or downvote comment.
 
 ## Authors
 
